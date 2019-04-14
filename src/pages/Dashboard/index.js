@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 import PropTypes from 'prop-types';
 
 class Dashboard extends Component {
   render() {
     return (
-      <div>
+      <Fragment>
         <NavBar />
-      </div>
+        <Footer />
+      </Fragment>
     );
   }
 }
