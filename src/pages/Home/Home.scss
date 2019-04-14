@@ -1,0 +1,31 @@
+.form-holder {
+    justify-content: space-around;
+    margin: 5rem auto;
+    width: 80%;
+    .kw-btn-bg {
+        background-color: #74c6ee;
+    }
+    .loginDivider {
+        display: none;
+    }
+}
+
+// Tablets
+@media (min-width: 767px) {
+    .form-holder {
+        width: 75%;
+        margin: 18rem auto;
+        padding: 0;
+    }
+}
+
+// Desktops
+@media (min-width: 1025px) {
+    .form-holder {
+        width: 50%;
+        margin-top: 14rem;
+    }
+    .loginDivider {
+        display: block !important;
+    }
+}

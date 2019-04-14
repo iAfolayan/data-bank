@@ -1,14 +1,11 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
 import routes from '../routes';
-import './App.css';
+import './App.scss';
 
 const App = () => (
   <Router>
     <Fragment>
-      <NavBar />
       <Switch>
         { routes.map(route => ( 
           <Route
@@ -19,7 +16,6 @@ const App = () => (
           />
         ))}
       </Switch>
-      <Footer />
     </Fragment>
   </Router>
 )
