@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import { Link } from 'react-router-dom';
 import {
   Button,
   Divider,
@@ -33,8 +34,10 @@ class Home extends Component {
             <Grid.Column>
               <Form>
                 <Form.Input icon='at' iconPosition='left' label='Email Address' placeholder='Email Address' />
-                <Form.Input icon='lock' iconPosition='left' label='Password' type='password' />
-                <Button icon='sign-in' labelPosition='left' content='LOGIN' fluid primary size='big' />
+                <Form.Input icon='lock' iconPosition='left' label='Password' type='password' placeholder='Password' />
+                <Link to='dashboard'>
+                  <Button icon='sign-in' labelPosition='left' content='LOGIN' fluid primary size='big' />
+                </Link>
               </Form>
               <Divider horizontal>No acoount <Icon link name='help' size='tiny' /></Divider>
               <Button onClick={this.show('mini')} animated='fade' color="teal" fluid>
