@@ -1,5 +1,5 @@
-import React, { Component, createRef, Fragment } from 'react';
-import { Menu, Segment, Input, Sticky, Image, Header } from 'semantic-ui-react';
+import React, { Component, createRef } from 'react';
+import { Menu, Segment, Sticky, Image } from 'semantic-ui-react';
 import ourLogo from '../../OurLogo.svg';
 import './NavBar.scss';
 // import PropTypes from 'prop-types';

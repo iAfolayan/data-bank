@@ -1,4 +1,14 @@
 .footer {
-    position: absolute;
+    position: fixed !important;
+    left: 0;
     bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .copyright {
+        font-size: 0.9rem
+    }
+    .designer {
+        font-size: 0.4rem
+    }
 }
