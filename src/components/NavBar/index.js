@@ -1,33 +1,36 @@
-import React, { Component, createRef } from 'react';
-import { Menu, Segment, Input, Sticky } from 'semantic-ui-react'
+import React, { Component, createRef, Fragment } from 'react';
+import { Menu, Segment, Input, Sticky, Image, Header } from 'semantic-ui-react';
+import ourLogo from '../../OurLogo.svg';
 import './NavBar.scss';
 // import PropTypes from 'prop-types';
 
 class NavBar extends Component {
-  state = { activeItem: 'home' }
+  state = { activeItem: 'Dashboard' }
   contextRef = createRef();
 
+  
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
+  
   render() {
     const { activeItem } = this.state
 
     return (
-      <Sticky context={this.contextRef}>
-        <Segment className="header">
+        <Segment padded size='mini'>
+          <Sticky context={this.contextRef}>
             <Menu secondary>
-              <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
+              <Image src={ourLogo} size='tiny' alt="kwara Diocese" className="logo" />
+              <Menu.Item position='right' name='Dashboard' active={activeItem === 'Dashboard'} onClick={this.handleItemClick} />
               <Menu.Item
-                name='messages'
-                active={activeItem === 'messages'}
+                name='Feedback'
+                active={activeItem === 'Feedback'}
                 onClick={this.handleItemClick}
               />
               <Menu.Item
-                name='friends'
-                active={activeItem === 'friends'}
+                name='Profile'
+                active={activeItem === 'Profile'}
                 onClick={this.handleItemClick}
               />
-              <Menu.Menu position='right'>
+              {/* <Menu.Menu position='right'>
                 <Menu.Item>
                   <Input icon='search' placeholder='Search...' />
                 </Menu.Item>
@@ -36,10 +39,10 @@ class NavBar extends Component {
                   active={activeItem === 'logout'}
                   onClick={this.handleItemClick}
                 />
-              </Menu.Menu>
+              </Menu.Menu> */}
             </Menu>
-          </Segment>
-      </Sticky>
+          </Sticky>
+        </Segment>
     )
   }
 }
