@@ -39,7 +39,7 @@ class Home extends Component {
                   <Button icon='sign-in' labelPosition='left' content='LOGIN' fluid primary size='big' />
                 </Link>
               </Form>
-              <Divider horizontal>No acoount <Icon link name='help' size='tiny' /></Divider>
+              <Divider horizontal>No account <Icon link name='help' size='tiny' /></Divider>
               <Button onClick={this.show('mini')} animated='fade' color="teal" fluid>
                 <Button.Content hidden>REGISTER</Button.Content>
                 <Button.Content visible>
