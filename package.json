@@ -11,7 +11,7 @@
         "react-scripts": "2.1.8",
         "semantic-ui-css": "^2.4.1",
         "semantic-ui-react": "^0.86.0",
-        "node-sass": "^4.11.0"
+        "node-sass": "^4.13.1"
     },
     "devDependencies": {
         "enzyme-adapter-react-16": "^1.12.1",
